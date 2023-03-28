@@ -1,0 +1,220 @@
+2023-03-28 10:39:24,216 [INFO] from org.reflections.Reflections in play-dev-mode-akka.actor.default-dispatcher-8 - Reflections took 313 ms to scan 2 urls, producing 101 keys and 702 values
+2023-03-28 10:39:24,296 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.elastic4play.services.AttachmentModel
+2023-03-28 10:39:24,312 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.UserModel
+2023-03-28 10:39:24,313 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.WorkerConfigModel
+2023-03-28 10:39:24,313 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.OrganizationModel
+2023-03-28 10:39:24,314 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.JobModel
+2023-03-28 10:39:24,315 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.WorkerModel
+2023-03-28 10:39:24,315 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.elastic4play.services.DBListModel
+2023-03-28 10:39:24,320 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.ArtifactModel
+2023-03-28 10:39:24,321 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.ReportModel
+2023-03-28 10:39:24,323 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading model class org.thp.cortex.models.AuditModel
+2023-03-28 10:39:24,380 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading authentication module class org.elastic4play.services.auth.ADAuthSrv
+2023-03-28 10:39:24,381 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading authentication module class org.thp.cortex.services.KeyAuthSrv
+2023-03-28 10:39:24,381 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading authentication module class org.thp.cortex.services.OAuth2Srv
+2023-03-28 10:39:24,386 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading authentication module class org.elastic4play.services.auth.LdapAuthSrv
+2023-03-28 10:39:24,390 [INFO] from module in play-dev-mode-akka.actor.default-dispatcher-8 - Loading authentication module class org.thp.cortex.services.LocalAuthSrv
+2023-03-28 10:39:26,578 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2023-03-28 10:39:27,075 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    org.thp.cortex.services.StreamFilter
+    org.elastic4play.services.TempFilter
+    org.thp.cortex.services.CSRFFilter
+    org.thp.cortex.services.AccessLogFilter
+
+2023-03-28 10:39:27,187 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev) (no global state)
+2023-03-28 10:39:28,680 [INFO] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-5 - New worker list:
+
+	
+
+2023-03-28 10:39:31,550 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+2023-03-28 10:39:31,554 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - Retrying request to {}->unix://localhost:80
+2023-03-28 10:39:31,556 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+2023-03-28 10:39:31,556 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - Retrying request to {}->unix://localhost:80
+2023-03-28 10:39:31,558 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:80: No such file or directory
+2023-03-28 10:39:31,559 [INFO] from org.apache.http.impl.execchain.RetryExec in jersey-client-async-executor-0 - Retrying request to {}->unix://localhost:80
+2023-03-28 10:39:31,577 [INFO] from org.thp.cortex.services.DockerJobRunnerSrv in play-dev-mode-akka.actor.default-dispatcher-8 - Docker is not available
+com.spotify.docker.client.exceptions.DockerException: java.util.concurrent.ExecutionException: javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory
+	at com.spotify.docker.client.DefaultDockerClient.propagate(DefaultDockerClient.java:2828)
+	at com.spotify.docker.client.DefaultDockerClient.request(DefaultDockerClient.java:2692)
+	at com.spotify.docker.client.DefaultDockerClient.info(DefaultDockerClient.java:595)
+	at org.thp.cortex.services.DockerJobRunnerSrv.$anonfun$isAvailable$3(DockerJobRunnerSrv.scala:53)
+	at play.api.LoggerLike.info(Logger.scala:136)
+	at play.api.LoggerLike.info$(Logger.scala:133)
+	at play.api.Logger.info(Logger.scala:233)
+	at org.thp.cortex.services.DockerJobRunnerSrv.$anonfun$isAvailable$1(DockerJobRunnerSrv.scala:53)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.thp.cortex.services.DockerJobRunnerSrv.isAvailable$lzycompute(DockerJobRunnerSrv.scala:51)
+	at org.thp.cortex.services.DockerJobRunnerSrv.isAvailable(DockerJobRunnerSrv.scala:50)
+	at org.thp.cortex.services.JobRunnerSrv$$anonfun$1.applyOrElse(JobRunnerSrv.scala:50)
+	at org.thp.cortex.services.JobRunnerSrv$$anonfun$1.applyOrElse(JobRunnerSrv.scala:49)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:145)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at scala.collection.TraversableLike.collect(TraversableLike.scala:407)
+	at scala.collection.TraversableLike.collect$(TraversableLike.scala:405)
+	at scala.collection.AbstractTraversable.collect(Traversable.scala:108)
+	at org.thp.cortex.services.JobRunnerSrv.<init>(JobRunnerSrv.scala:49)
+	at org.thp.cortex.services.JobRunnerSrv$$FastClassByGuice$$38855328.GUICE$TRAMPOLINE(<generated>)
+	at org.thp.cortex.services.JobRunnerSrv$$FastClassByGuice$$38855328.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:436)
+	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$3(Injector.scala:120)
+	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:128)
+	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:120)
+	at play.api.inject.RoutesProvider.$anonfun$get$2(BuiltinModule.scala:121)
+	at scala.Option.fold(Option.scala:251)
+	at play.api.inject.RoutesProvider.get$lzycompute(BuiltinModule.scala:121)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:116)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:110)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:59)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at play.api.http.DefaultHttpRequestHandler.routeRequest(HttpRequestHandler.scala:289)
+	at play.api.http.JavaCompatibleHttpRequestHandler.routeRequest(HttpRequestHandler.scala:396)
+	at play.api.http.DefaultHttpRequestHandler.routeWithFallback$1(HttpRequestHandler.scala:187)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:237)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.http.scaladsl.Http2Ext.$anonfun$handleUpgradeRequests$1(Http2.scala:145)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$SimpleBoundaryEvent.execute(ActorGraphInterpreter.scala:61)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$SimpleBoundaryEvent.execute$(ActorGraphInterpreter.scala:57)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$RequestMore.execute(ActorGraphInterpreter.scala:289)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+Caused by: java.util.concurrent.ExecutionException: javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory
+	at jersey.repackaged.com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:299)
+	at jersey.repackaged.com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:286)
+	at jersey.repackaged.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.spotify.docker.client.DefaultDockerClient.request(DefaultDockerClient.java:2690)
+	... 93 common frames omitted
+Caused by: javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:481)
+	at org.glassfish.jersey.apache.connector.ApacheConnector$1.run(ApacheConnector.java:491)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at jersey.repackaged.com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at jersey.repackaged.com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:50)
+	at jersey.repackaged.com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:37)
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:487)
+	at org.glassfish.jersey.client.ClientRuntime$2.run(ClientRuntime.java:178)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:340)
+	at org.glassfish.jersey.client.ClientRuntime$3.run(ClientRuntime.java:210)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: No such file or directory
+	at jnr.unixsocket.UnixSocketChannel.doConnect(UnixSocketChannel.java:127)
+	at jnr.unixsocket.UnixSocketChannel.connect(UnixSocketChannel.java:136)
+	at jnr.unixsocket.UnixSocketChannel.connect(UnixSocketChannel.java:223)
+	at com.spotify.docker.client.UnixConnectionSocketFactory.connectSocket(UnixConnectionSocketFactory.java:85)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:435)
+	... 21 common frames omitted
+2023-03-28 10:39:31,642 [WARN] from org.thp.cortex.services.JobRunnerSrv in play-dev-mode-akka.actor.default-dispatcher-8 - The package cortexutils for python hasn't been found
+2023-03-28 10:39:31,644 [WARN] from org.thp.cortex.services.JobRunnerSrv in play-dev-mode-akka.actor.default-dispatcher-8 - The package cortexutils for python2 hasn't been found
+2023-03-28 10:39:31,646 [WARN] from org.thp.cortex.services.JobRunnerSrv in play-dev-mode-akka.actor.default-dispatcher-8 - The package cortexutils for python3 hasn't been found
+2023-03-28 10:39:32,006 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in play-dev-mode-akka.actor.default-dispatcher-8 - Creating HTTP client on http://127.0.0.1:9200
+2023-03-28 10:39:33,100 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search?scroll=60000ms] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:33,812 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-8 - 127.0.0.1 GET / took 161ms and returned 303 0 bytes
+2023-03-28 10:39:34,393 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 127.0.0.1 GET /index.html took 103ms and returned 200 1254 bytes
+2023-03-28 10:39:35,290 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-10 - 127.0.0.1 GET /assets/styles/css/app.d6e422ba4ef05f0877b6.css took 12ms and returned 200 11370749 bytes
+2023-03-28 10:39:35,402 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/_search/scroll] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:35,456 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-18 - 127.0.0.1 GET /app.d6e422ba4ef05f0877b6.js took 2ms and returned 200 2757908 bytes
+2023-03-28 10:39:35,541 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [DELETE http://127.0.0.1:9200/_search/scroll/] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:37,577 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 127.0.0.1 GET /favicon-196x196.png took 2ms and returned 200 37805 bytes
+2023-03-28 10:39:37,626 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-13 - 127.0.0.1 GET /favicon-16x16.png took 30ms and returned 200 735 bytes
+2023-03-28 10:39:38,328 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:38,334 [ERROR] from org.elastic4play.controllers.Authenticated in application-akka.actor.default-dispatcher-5 - Authentication failure:
+	session: AuthenticationError User session not found
+	pki: AuthenticationError Certificate authentication is not configured
+	key: AuthenticationError Authentication header not found
+	init: AuthenticationError Use of initial user is forbidden because users exist in database
+2023-03-28 10:39:38,429 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 127.0.0.1 GET /api/user/current took 181ms and returned 401 65 bytes
+2023-03-28 10:39:38,626 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-18 - 127.0.0.1 GET /api/status took 32ms and returned 200 279 bytes
+2023-03-28 10:39:51,367 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [HEAD http://127.0.0.1:9200/cortex_6] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:51,446 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:51,564 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:51,591 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-13 - 127.0.0.1 POST /api/login took 408ms and returned 200 79 bytes
+2023-03-28 10:39:51,967 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-13 - 127.0.0.1 GET /api/user/current took 54ms and returned 200 381 bytes
+2023-03-28 10:39:52,012 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-10 - 127.0.0.1 GET /api/user/current took 11ms and returned 200 381 bytes
+2023-03-28 10:39:52,048 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-9 - 127.0.0.1 GET /api/status took 10ms and returned 200 279 bytes
+2023-03-28 10:39:52,387 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:52,443 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 127.0.0.1 POST /api/organization/_search?range=0-50 took 192ms and returned 200 
+2023-03-28 10:39:52,607 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 127.0.0.1 GET /api/user/bhavu551999@gmail.com took 57ms and returned 200 364 bytes
+2023-03-28 10:39:55,330 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [POST http://127.0.0.1:9200/cortex_6/_search] returned 1 warnings: [299 Elasticsearch-7.17.9-ef48222227ee6b9e70e502f0f0daa52435ee634d "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-03-28 10:39:55,332 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-10 - 127.0.0.1 POST /api/organization/_search?range=0-50 took 40ms and returned 200 
+2023-03-28 10:40:02,215 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-13 - GET /api/alert returned 403
+2023-03-28 10:40:02,219 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-13 - 127.0.0.1 GET /api/alert took 65ms and returned 403 84 bytes
+2023-03-28 10:40:03,501 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-5 - 127.0.0.1 GET /api/logout took 1ms and returned 200 0 bytes
+2023-03-28 10:40:03,548 [INFO] from org.thp.cortex.services.AccessLogFilter in play-dev-mode-akka.actor.default-dispatcher-9 - 127.0.0.1 GET /api/status took 2ms and returned 200 279 bytes
+2023-03-28 10:40:10,129 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-1 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2023-03-28 10:40:10,133 [INFO] from akka.actor.CoordinatedShutdown in play-dev-mode-akka.actor.default-dispatcher-19 - Running CoordinatedShutdown with reason [ServerStoppedReason]
+2023-03-28 10:40:10,140 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-1 - Stopping Akka HTTP server...
+2023-03-28 10:40:10,169 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-33 - Terminating server binding for /0.0.0.0:9000
+2023-03-28 10:40:10,204 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-13 - Running CoordinatedShutdown with reason [ApplicationStoppedReason]
+2023-03-28 10:40:10,363 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-33 - Running provided shutdown stop hooks

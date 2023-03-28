@@ -1,0 +1,98 @@
+[0m[[0m[0minfo[0m] [0m[0mBuilding front-end ...[0m
+[0m[[0m[0minfo[0m] [0m[0mnpm install --legacy-peer-deps[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN babel-loader@6.4.1 requires a peer of webpack@1 || 2 || ^2.1.0-beta || ^2.2.0-rc but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN baggage-loader@0.2.4 requires a peer of webpack@1.x.x but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN extract-text-webpack-plugin@2.0.0-beta.4 requires a peer of webpack@^2.1.0-beta.19 but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN manifest-revision-webpack-plugin@0.3.0 requires a peer of webpack@^1.8.11 but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN sass-loader@4.1.1 requires a peer of node-sass@^3.4.2 || ^4.0.0 but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN sass-loader@4.1.1 requires a peer of webpack@^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6 but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[31merror[0m] [0m[0mnpm WARN webpack-dev-server@2.2.0 requires a peer of webpack@^2.2.0 but none is installed. You must install peer dependencies yourself.[0m
+[0m[[0m[0minfo[0m] [0m[0maudited 1451 packages in 7.15s[0m
+[0m[[0m[0minfo[0m] [0m[0m53 packages are looking for funding[0m
+[0m[[0m[0minfo[0m] [0m[0m  run `npm fund` for details[0m
+[0m[[0m[0minfo[0m] [0m[0mfound 40 vulnerabilities (5 low, 20 moderate, 12 high, 3 critical)[0m
+[0m[[0m[0minfo[0m] [0m[0m  run `npm audit fix` to fix them, or `npm audit` for details[0m
+[0m[[0m[0minfo[0m] [0m[0mnpm run build --legacy-peer-deps[0m
+[0m[[0m[0minfo[0m] [0m[0m> cortex@3.1.7 build /home/ubuntu/cortex-code/Cortex/www[0m
+[0m[[0m[0minfo[0m] [0m[0m> cross-env NODE_ENV=production webpack -p --colors[0m
+[0m[[0m[31merror[0m] [0m[0mclean-webpack-plugin: /home/ubuntu/cortex-code/Cortex/www/dist has been removed.[0m
+[0m[[0m[31merror[0m] [0m[0m(node:50961) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56[0m
+[0m[[0m[31merror[0m] [0m[0mparseQuery() will be replaced with getOptions() in the next major version of loader-utils.[0m
+[0m[[0m[31merror[0m] [0m[0m(Use `node --trace-deprecation ...` to show where the warning was created)[0m
+[0m[[0m[31merror[0m] [0m[0m(node:50961) DeprecationWarning: Chunk.modules is deprecated. Use Chunk.getNumberOfModules/mapModules/forEachModule/containsModule instead.[0m
+[0m[[0m[0minfo[0m] [0m[0mHash: [1mc7132876d043b8864768[39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion: webpack [1m3.5.0[39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0mTime: [1m72528[39m[22mms[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                       [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                 [1m[32mfavicon.ico[39m[22m    4.29 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                           [1m[32mfavicon-16x16.png[39m[22m  735 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                           [1m[32mfavicon-32x32.png[39m[22m    1.73 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                           [1m[32mfavicon-96x96.png[39m[22m    10.7 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                         [1m[32mfavicon-128x128.png[39m[22m    8.82 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                         [1m[32mfavicon-196x196.png[39m[22m    37.8 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m[1m[32massets/images/no-avatar_f9289a7534fb14baa43988b5772b08a5.png[39m[22m    18.2 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m                                 [1m[33mapp.d6e422ba4ef05f0877b6.js[39m[22m    [1m[33m2.76 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  app[0m
+[0m[[0m[0minfo[0m] [0m[0m              [1m[33massets/styles/css/app.d6e422ba4ef05f0877b6.css[39m[22m    [1m[33m11.4 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  app[0m
+[0m[[0m[0minfo[0m] [0m[0m                             [1m[32mapp.d6e422ba4ef05f0877b6.js.map[39m[22m    14.1 MB       [1m0[39m[22m  [1m[32m[emitted][39m[22m         app[0m
+[0m[[0m[0minfo[0m] [0m[0m          [1m[32massets/styles/css/app.d6e422ba4ef05f0877b6.css.map[39m[22m     730 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m         app[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                  [1m[32mindex.html[39m[22m    1.25 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         [0m
+[0m[[0m[0minfo[0m] [0m[0m  [42] [1m./src/assets/images/logo-dark.svg[39m[22m 2.27 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [141] [1m./src/app/index.bootstrap.js[39m[22m 754 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [142] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon.ico[39m[22m 57 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [143] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon-16x16.png[39m[22m 63 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [144] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon-32x32.png[39m[22m 63 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [145] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon-96x96.png[39m[22m 63 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [146] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon-128x128.png[39m[22m 65 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [147] [1m./node_modules/file-loader?name=[name].[ext]!./src/favicon-196x196.png[39m[22m 65 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [148] [1m./src/app/index.vendor.js[39m[22m 854 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [267] [1m./src/app/index.module.js[39m[22m 1.35 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [268] [1m./src/app/index.config.js[39m[22m 1.12 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [269] [1m./src/app/index.run.js[39m[22m 1.64 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [270] [1m./src/app/core/core.module.js[39m[22m 2.08 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [301] [1m./src/app/index.components.js[39m[22m 515 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m [495] [1m./src/assets/styles/sass/index.scss[39m[22m 41 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m    + 481 hidden modules[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mhtml-webpack-plugin for "index.html"[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m     1 asset[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/html-webpack-plugin/lib/loader.js!./src/tpl-index.ejs[39m[22m 1.98 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [2] [1m(webpack)/buildin/global.js[39m[22m 509 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [3] [1m(webpack)/buildin/module.js[39m[22m 517 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/pages/analyzers/analyzers.page.scss[39m[22m 271 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       2 modules[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/pages/login/login.page.scss[39m[22m 496 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/pages/jobs/jobs.page.scss[39m[22m 1.2 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       2 modules[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       2 modules[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/core/directives/user-avatar/user-avatar.scss[39m[22m 2.27 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/core/directives/file-chooser/file-chooser.scss[39m[22m 1.12 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/core/directives/tlp/tlp.scss[39m[22m 1 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/app/pages/admin/organizations/organizations.scss[39m[22m 666 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 1 hidden module[0m
+[0m[[0m[0minfo[0m] [0m[0mChild [1mextract-text-webpack-plugin[39m[22m:[0m
+[0m[[0m[0minfo[0m] [0m[0m       [0] [1m./src/assets/fonts/SourceSansPro-Light.otf[39m[22m 301 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [1] [1m./src/assets/fonts/SourceSansPro-Regular.otf[39m[22m 306 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [2] [1m./src/assets/fonts/SourceSansPro-Semibold.otf[39m[22m 310 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [3] [1m./src/assets/fonts/SourceSansPro-Bold.otf[39m[22m 314 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [4] [1m./src/assets/fonts/SourceSansPro-LightIt.otf[39m[22m 104 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [5] [1m./src/assets/fonts/SourceSansPro-It.otf[39m[22m 106 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [6] [1m./src/assets/fonts/SourceSansPro-SemiboldIt.otf[39m[22m 107 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m       [9] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./node_modules/postcss-loader!./node_modules/sass-loader?outputStyle=expanded&sourceMap=true&sourceMapContents=true!./src/assets/styles/sass/index.scss[39m[22m 930 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m      [10] [1m./node_modules/css-loader?root=/home/ubuntu/cortex-code/Cortex/www/src&sourceMap!./src/assets/styles/sass/vendors/AdminLTE-fonts.scss[39m[22m 34 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[0m
+[0m[[0m[0minfo[0m] [0m[0m        + 6 hidden modules[0m

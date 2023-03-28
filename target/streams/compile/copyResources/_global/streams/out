@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/cortex-code/Cortex/conf/reference.conf,/home/ubuntu/cortex-code/Cortex/target/scala-2.12/classes/reference.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/cortex-code/Cortex/conf/routes,/home/ubuntu/cortex-code/Cortex/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/cortex-code/Cortex/conf/application.sample,/home/ubuntu/cortex-code/Cortex/target/scala-2.12/classes/application.sample)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/cortex-code/Cortex/conf/logback.xml,/home/ubuntu/cortex-code/Cortex/target/scala-2.12/classes/logback.xml)[0m

@@ -1,0 +1,37 @@
+<div class="modal-header bg-primary">
+  <h3 class="modal-title">About</h3>
+</div>
+<div class="modal-body">
+  <div class="pv-s text-center">
+    <img alt="Cortex" height="50" src="../../../assets/images/logo-dark.svg" />
+  </div>
+  <div class="row" ng-repeat="(module, ver) in $modal.version">
+    <div class="col-md-6">
+      <strong class="pull-right">{{module}}</strong>
+    </div>
+    <div class="col-md-6">{{ver}}</div>
+  </div>
+  <div class="row mt-s">
+    <div class="col-md-12 text-center">
+      <div>
+        <a href="https://thehive-project.org" target="_blank">TheHive Project</a>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-s">
+    <div class="col-md-12 text-center">
+        <strong>
+          <a href="https://thehive-project.org" target="_blank">TheHive Project</a> 2016-2021,
+          <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPL-V3</a>
+        </strong>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <div class="text-center">
+    <div class="btn btn-primary" ng-click="$modal.close()">
+      Close
+    </div>
+  </div>
+</div>

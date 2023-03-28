@@ -1,0 +1,15 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/app/org/thp/cortex/controllers/StatusCtrl.scala:3:44: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport scala.concurrent.{ExecutionContext, Future}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/app/org/thp/cortex/controllers/StatusCtrl.scala:7:39: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json.{JsBoolean, JsNull, JsString, Json}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/app/org/thp/cortex/services/WorkerSrv.scala:9:43: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.elastic4play.services.QueryDSL.any[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/conf/routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/conf/routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/conf/routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/conf/routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/cortex-code/Cortex/conf/routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m8 warnings found[0m
